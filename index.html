@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="Mikolaj">
+            <p>Ho Ho Ho</p>
+            <p>Kto to przyszedł? Czy to pan pythonowiec?</p>
+            <p>Abym miał pewność rozwiąż ten prosty program.</p>
+        </div>
+        <div id="Program">
+            <p>Kod python:</p>
+            <input type="text" id="Text" value="">
+            ("Hello world!")
+            <p>Output:</p>
+            <p>Hello world</p>
+            <button onclick="myFunction()">Wyślij odpowiedź</button>
+        </div>
+        <div id="Certyfikat"></div>
+    </div>
+    <div id="drugimain">
+        <img src="mikolaj.png">
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("Text").value;
+            if (x == "print") {
+                document.getElementById("Mikolaj").innerHTML = ""
+                document.getElementById("Program").innerHTML = ""
+                document.getElementById("Certyfikat").innerHTML = "<h1>Certyfikat</h1><p>Dla Marka Janczewskiego</p> <p> za bycie giga koxem pythonowcem oraz za znakomitą znajomość jezyka python</p>";
+                document.getElementById("drugimain").innerHTML = '<img src="mikolaj-certified.png">'
+            }
+
+        }
+    </script>
+</body>
+
+</html>
